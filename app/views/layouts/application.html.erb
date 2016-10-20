@@ -33,7 +33,7 @@
         <div class="container-fluid">
           <div class="navbar-header">
             <a class="navbar-brand" href="#">
-              <img alt="Brand" src="/image/cupclipart.png">
+              <%= image_tag("cupclipart.png", alt: "Brand") %>
             </a>
           </div> <!--NavBar Header ends here -->
             <p #id="black-text" class="navbar-text navbar-right">
@@ -84,7 +84,9 @@
 
       <div class="col-sm-4"> <!--main right section begins here -->
         <div id="border" class="text-center">
-        <img class="img-circle" id="img" src="/image/munn.jpg" alt="Olivia Munn"/>
+
+                  <%= image_tag("munn.jpg", class: "img-circle", id: "img", alt: "Olivia Munn") %>
+
           <h5> Olivia Munn</h5>
           <h6 id="size">Contact me on <a href="#">Facebook</a> or <a href="#"> Instagram</a></h6>
         </div>
@@ -95,7 +97,7 @@
         <div class="text-center">
           <div>
           <a href="#" alt="picture of tea cup">
-             <img id="img-right" src="/image/tea.jpg" alt="tea picture">
+            <%= image_tag("tea.jpg", id: "img-right", alt: "tea picture") %>
           </a>
           </div>
           <h6 id="text-right"><a href="#"> About this Ad</a></h6>
