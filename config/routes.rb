@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   root 'welcome#index'
-  get '/show/:id' => 'welcome#show', as: :blog
+  get '/posts/:id' => 'welcome#show', as: :post
 
 
 

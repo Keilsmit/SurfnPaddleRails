@@ -1,0 +1,25 @@
+<div class="container-fluid">
+<main class="row">
+  <div class="col-sm-8"> <!-- Main left section begins here -->
+    <div class="row">
+    </div> <!--sub row 1 of 4 begins here -->
+
+
+
+<div class="post-preview">
+  <%= link_to post_path(id: @post.id) do %>
+        <h2 class="post-title">
+            <%= @post.title %>
+        </h2>
+    <% end %>
+    <p class="post-meta">Posted by <a href="#"><%= @post.author.name %></a> on <%= @post.created_at.strftime("%B %e, %Y") %></p>
+</div>
+
+<%= simple_format(@post.body) %>
+
+
+
+  </div> <!-- 4 column Div ends here -->
+</main> <!--Main section (in cluding two columns) Ends here-->
+
+</div> <!--container window ends here -->
