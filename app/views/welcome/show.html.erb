@@ -4,22 +4,42 @@
     <div class="row">
     </div> <!--sub row 1 of 4 begins here -->
 
-
-
-<div class="post-preview">
+<div>
   <%= link_to post_path(id: @post.id) do %>
         <h2 class="post-title">
             <%= @post.title %>
         </h2>
     <% end %>
-    <p class="post-meta">Posted by <a href="#"><%= @post.author.name %></a> on <%= @post.created_at.strftime("%B %e, %Y") %></p>
+    <p>Posted by <a href="#"><%= @post.author %></a> on <%= @post.created_at.strftime("%B %e, %Y") %></p>
 </div>
 
-<%= simple_format(@post.body) %>
+<%= @post.body %>
+</div> <!-- 4 column Div ends here -->
 
 
+<div class="col-sm-4"> <!--main right section begins here -->
+  <div id="border" class="text-center">
 
-  </div> <!-- 4 column Div ends here -->
+            <%= image_tag("munn.jpg", class: "img-circle", id: "img", alt: "Olivia Munn") %>
+
+    <h5> Olivia Munn</h5>
+    <h6 id="size">Contact me on <a href="#">Facebook</a> or <a href="#"> Instagram</a></h6>
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <div class="text-center">
+    <div>
+    <a href="#" alt="picture of tea cup">
+      <%= image_tag("tea.jpg", id: "img-right", alt: "tea picture") %>
+    </a>
+    </div>
+    <h6 id="text-right"><a href="#"> About this Ad</a></h6>
+    <br>
+    <h4 id="text-left">White vs Green Tea!</h4>
+    <p id="text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+  </div>
 </main> <!--Main section (in cluding two columns) Ends here-->
 
 </div> <!--container window ends here -->

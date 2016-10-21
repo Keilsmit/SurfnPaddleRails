@@ -3,24 +3,19 @@
   <div class="col-sm-8"> <!-- Main left section begins here -->
     <div class="row">
     </div> <!--sub row 1 of 4 begins here -->
-      <h2 id="bigtext">10 BENEFITS OF DRINKING<br>TEA OVER COFFEE</h2>
-        <h6><p>By Olivia Munn on <a href="#">Monday October,1 2016</a></p></h6>
+      <h2 id="bigtext"><%= @post.title %></h2>
+        <h6><p>By <%= @post.author %> on <a href="#"> <%=@post.created_at.strftime("%B %e, %Y") %></a></p></h6>
     <br>
-    <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris <a href="#">nisi ut</a> aliquip ex ea commodo consequat.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est <a href="#">laborum.</a></p>
-      <br>
-    </div> <!--sub row 2 of 4 begins here -->
-
 
     <div>
-      <h4 id="leftboarder">"Duis aute irure dolor<br> in reprehenderit in voluptate velit"</h4>
+        <%= @post.body %>
+    </div>
+    <div>
+      <%= image_tag(@post.image) %>
+    </div>
 
-        <br>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br><br>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-      </p>
-    </div> <!--sub row 3 of 4 begins here -->
+
+
 
     <div>
       <button>Read Comments</button>
@@ -28,10 +23,6 @@
       <button>Share This Point</button>
     </div> <!--sub row 4 of 4 begins here -->
   </div> <!-- 8 Column Div Ends here -->
-
-
-
-
 
   <div class="col-sm-4"> <!--main right section begins here -->
     <div id="border" class="text-center">
@@ -61,38 +52,3 @@
 
 
 </main> <!--Main section (in cluding two columns) Ends here-->
-
-<div class="text-center">
-  <h1 id="lower-text"> Most Popular Topics</h1>
-</div> <!--lower header "popular topics"-->
-
-</div> <!--container window ends here -->
-
-<aside> <!-- removed the class="container-fluid" on the aside to remove margin-->
-  <div class="row">
-  <div class="col-sm-3">
-    <a href="#" alt="box1">
-    <h3 class="aside-text">Another Cool Post</h3>
-    <img class="img-responsive" src="https://unsplash.it/400/400?image=999" alt="Box 1"/>
-    </a>
-  </div> <!--bottow 1 of 4 block ends here -->
-  <div class="col-sm-3">
-    <a href="#" alt="box2">
-    <h3 class="aside-text">Post Title</h3>
-    <img class="img-responsive" src="https://unsplash.it/400/400?image=326" alt="box 2"/>
-    </a>
-  </div> <!--bottow 2 of 4 block ends here -->
-  <div class="col-sm-3">
-    <a href="#" alt="box3">
-    <h3 class="aside-text">Here's Another<br>Longer Post Title!</h3>
-    <img class="img-responsive" src="https://unsplash.it/400/400?image=225" alt="box 3"/>
-    </a>
-  </div> <!--bottow 3 of 4 block ends here -->
-  <div class="col-sm-3">
-    <a href="#" alt="box4">
-    <h3 class="aside-text">Oh, Cool Post!</h3>
-    <img class="img-responsive" src="https://unsplash.it/400/400?image=30" alt="box 4"/>
-    </a>
-  </div> <!--bottow 4 of 4 block ends here -->
-</div>
-</aside> <!--Lower picture bar ends here-->

@@ -50,6 +50,27 @@
       <%= yield %>
 
 
+
+    <div class="text-center">
+      <h1 id="lower-text"> Most Popular Topics</h1>
+    </div> <!--lower header "popular topics"-->
+
+    </div> <!--container window ends here -->
+
+    <aside> <!-- removed the class="container-fluid" on the aside to remove margin-->
+      <div class="row">
+      <% @bottom_post.each do |post| %>
+        <div class="col-sm-3">
+          <%=link_to post_path(id: post.id) do%>
+          <h3 class="aside-text"> <%= post.title %></h3>
+          <%= image_tag(post.image, class: "img-responsive") %>
+        <% end %>
+        </div> <!--bottow 1 of 4 block ends here -->
+      <% end %>
+    </div>
+    </aside> <!--Lower picture bar ends here-->
+
+
     <footer class="row">
       <div class="col-sm-8">
         <p>The Iron Yard <a href="#" alt="copy right">Copy Right</a> 2013, All Rights Reserved</p>
@@ -57,7 +78,7 @@
 
       <div class="col-sm-4">
         <ol class="breadcrumb">
-          <li><a href="#">Nav item1</a></li>
+          <li><%=link_to "Home", root_path %></li>
           <li><a href="#">Nav item2</a></li>
           <li><a href="#">Nav item3</a></li>
           <li><a href="#">Nav item4</a></li>
