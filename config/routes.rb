@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
 
   root 'welcome#index'
+  get '/about/' => 'about#info', as: :about_page
   get '/posts/:id' => 'welcome#show', as: :post
+
 
 
 

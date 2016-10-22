@@ -3,27 +3,15 @@
   <div class="col-sm-8"> <!-- Main left section begins here -->
     <div class="row">
     </div> <!--sub row 1 of 4 begins here -->
-      <h2 id="bigtext"><%= @post.title %></h2>
-        <h6><p>By <%= @post.author %> on <a href="#"> <%=@post.created_at.strftime("%B %e, %Y") %></a></p></h6>
-    <br>
-
-    <div>
-        <%= simple_format(@post.body) %>
-    </div>
-    <div>
-      <%= image_tag(@post.image) %>
-    </div>
+    <% @post.title %>
 
 
 
 
-    <div>
-      <br>
-      <br>
-      <button>Read Comments</button>
-      <button>Read Later</button>
-      <button>Share This Point</button>
-    </div> <!--sub row 4 of 4 begins here -->
+
+
+
+
   </div> <!-- 8 Column Div Ends here -->
 
   <div class="col-sm-4"> <!--main right section begins here -->
