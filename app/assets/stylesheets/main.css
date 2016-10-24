@@ -1,0 +1,174 @@
+
+
+header {
+  background-image: url(bamboo.jpg);
+  background-repeat: no-repeat;
+  border-bottom: 2px grey;
+}
+
+
+header img{
+  width: 52px;
+  box-shadow: black 40px;
+}
+
+header a{
+  color: #ffffff;
+  padding-left: 30px;
+}
+
+#black-text {
+  color: black;
+}
+
+#header-text{
+  text-align: center;
+  font-family: fantasy;
+  color: white;
+  text-shadow: #000000;
+  padding-top: 90px;
+  font-weight: bold;
+}
+
+#header-subtext{
+  text-align: center;
+  color: black;
+  margin-top: -45px;
+  font-weight: bold;
+}
+.jumbotron {
+  height: 400px;
+  opacity: .8;
+}
+
+main {
+  padding-left: 160px;
+  padding-right: 160px;
+}
+
+main button{
+  background-color: #d3d3d3;
+  color: white;
+  padding-right: 40px;
+  margin-right: 11px;
+}
+
+main button:hover{
+  background-color: rgb(7, 22, 40);
+}
+
+#bigtext{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+#img {
+  width: 190px;
+}
+
+#leftboarder {
+  border-left: .6px solid #d3d3d3;
+  padding-left: 30px;
+  font-family: sans-serif;
+  color: rgba(51, 66, 49, .9);
+  font-size: 30px;
+}
+
+#img-right{
+  opacity: 1;
+}
+
+#img-right:hover {
+  opacity: .5;
+}
+
+#border {
+  border-bottom: .6px solid #d3d3d3;
+}
+
+#text-right {
+  text-align: right;
+  padding-right: 55px;
+  font-size: 10px;
+}
+
+#size {
+  font-size: 9px;
+}
+
+#text-left {
+  text-align: left;
+}
+
+
+
+#lower-text {
+  color: rgb(51, 66, 49);
+  border-top: .6px solid #d3d3d3;
+  padding-top: 60px;
+  padding-bottom: 10px;
+  font-family: "Arial Bold";
+  font-size: 60px;
+  font-weight: bold;
+}
+
+aside {
+  background-color: rgba(51, 66, 49, .9);
+  display: inline-block;
+  padding: 0;
+}
+
+.aside-text{
+  position: absolute;
+  padding-left: 20px;
+  bottom: 12px;
+  color: white;
+  font-family: fantasy;
+}
+
+
+aside .img-responsive{
+  opacity: 0.2;
+}
+
+aside .img-responsive:hover {
+  opacity: .7;
+}
+
+aside .col-sm-3 {
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+
+
+footer {
+  background-color: rgba(64, 49, 28, 0.8);
+  display: block;
+  height: 90px;
+  padding-top: 32px;
+  padding-left: 10px;
+  padding-right: 10px;
+  margin-top: -0px;
+}
+
+
+footer .breadcrumb {
+  background-color: transparent;
+}
+
+footer p {
+  color: white;
+  text-align: left;
+  padding: 15px;
+}
+
+footer a{
+  color: #ffffff;
+}
+
+footer ol {
+  text-align: center;
+}

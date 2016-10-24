@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title><%= yield(:title) %></title>
+  <%= csrf_meta_tags %>
+
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <!-- Stylesheets go here. -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css" />
+  <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+</head>
+<body>
+  <!-- Content goes here. -->
+
+    <header class="jumbotron">
+      <div class="container-fluid">
+      <nav class="navbar">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="#">
+              <%= image_tag("cupclipart.png", alt: "Brand") %>
+            </a>
+          </div> <!--NavBar Header ends here -->
+            <p #id="black-text" class="navbar-text navbar-right">
+              <%=link_to "About", about_page_path %>
+              <!-- <a href="#"> About </a> -->
+               <a href="#" class="navbar-link">Search </a>
+             </p> <!-- Right Nav Bar text Ends Here -->
+             <h1 id="header-text">Surf & Paddle Tea Co.</h1>
+             <h5 id="header-subtext">An Iron Yard Academy Project Est. Fall 2016</h5>
+        </div> <!-- Div Container Fluid ends here-->
+      </nav> <!-- Left Nav bar w/ logo Ends here -->
+    </div>
+    </header> <!--header pic & nav bar. End here-->
+
+      <%= yield %>
+
+
+
+    <div class="text-center">
+      <h1 id="lower-text"> Most Popular Topics</h1>
+    </div> <!--lower header "popular topics"-->
+
+    </div> <!--container window ends here -->
+
+    <aside> <!-- removed the class="container-fluid" on the aside to remove margin-->
+      <div class="row">
+      <% @bottom_post.each do |post| %>
+        <div class="col-sm-3">
+          <%=link_to post_path(id: post.id) do%>
+          <h3 class="aside-text"> <%= post.title %></h3>
+          <%= image_tag(post.image, class: "img-responsive") %>
+        <% end %>
+        </div> <!--bottow 1 of 4 block ends here -->
+      <% end %>
+    </div>
+    </aside> <!--Lower picture bar ends here-->
+
+
+    <footer class="row">
+      <div class="col-sm-8">
+        <p>The Iron Yard <a href="#" alt="copy right">Copy Right</a> 2013, All Rights Reserved</p>
+      </div>
+
+      <div class="col-sm-4">
+        <ol class="breadcrumb">
+          <h4><%=link_to "Home", root_path %></h4>
+          <!-- <li><a href="#">Nav item2</a></li>
+          <li><a href="#">Nav item3</a></li>
+          <li><a href="#">Nav item4</a></li> -->
+        </ol>
+      </div>
+      <!-- Included so I (you) can see the title is changing for every page -->
+     <h3><%= yield(:title) %></h3>
+     
+    </footer> <!--Footer ends here-->
+  <!-- Scripts go here. -->
+
+</body>
+</html>

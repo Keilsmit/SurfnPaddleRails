@@ -1,0 +1,59 @@
+<% content_for :title, "Home Page" %>
+
+<div class="container-fluid">
+<main class="row">
+  <div class="col-sm-8"> <!-- Main left section begins here -->
+    <div class="row">
+    </div> <!--sub row 1 of 4 begins here -->
+
+      <h2 id="bigtext"><%= @post.title %></h2>
+        <h6><p>By <%= @post.author %> on <a href="#"> <%=@post.created_at.strftime("%B %e, %Y") %></a></p></h6>
+    <br>
+
+    <div>
+        <%= simple_format(@post.body) %>
+    </div>
+    <div>
+      <%= image_tag(@post.image) %>
+    </div>
+
+
+
+
+    <div>
+      <br>
+      <br>
+      <button>Read Comments</button>
+      <button>Read Later</button>
+      <button>Share This Point</button>
+    </div> <!--sub row 4 of 4 begins here -->
+  </div> <!-- 8 Column Div Ends here -->
+
+  <div class="col-sm-4"> <!--main right section begins here -->
+    <div id="border" class="text-center">
+
+              <%= image_tag("munn.jpg", class: "img-circle", id: "img", alt: "Olivia Munn") %>
+
+      <h5> Olivia Munn</h5>
+      <h6 id="size">Contact me on <a href="#">Facebook</a> or <a href="#"> Instagram</a></h6>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text-center">
+      <div>
+      <a href="#" alt="picture of tea cup">
+        <%= image_tag("tea.jpg", id: "img-right", alt: "tea picture") %>
+      </a>
+      </div>
+      <h6 id="text-right"><a href="#"> About this Ad</a></h6>
+      <br>
+      <h4 id="text-left">White vs Green Tea!</h4>
+      <p id="text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+  </div> <!-- 4 column Div ends here -->
+
+
+</main> <!--Main section (in cluding two columns) Ends here-->

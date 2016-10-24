@@ -1,0 +1,62 @@
+<% content_for :title, "About Surf-n-Paddle Page" %>
+
+<div class="container-fluid">
+<main class="row">
+  <div class="col-sm-8"> <!-- Main left section begins here -->
+    <div class="row">
+    </div> <!--sub row 1 of 4 begins here -->
+    <% @post.title %>
+
+    <div>
+      <h4>YOU’VE REACHED Surf-n-Paddle Tea Co.</h4>
+      <p>WHERE WE LIVE, BREATHE AND DREAM OF TEA. WE LOVE TEA’S MYSTERIOUS BEGINNINGS AND RICH TRADITIONS. EVEN AS WE LOVINGLY REIMAGINE THEM.   WE ARE DRAWN TO TEA’S FLAVORS, COLORS AND AROMAS. AND WE DELIGHT IN KNOWING THAT EACH CUP OVERFLOWS WITH PURE, NATURAL GOODNESS. MOST OF ALL WE WANT TO SHARE THE TEA LIFE WE LOVE. LET US MAKE A CUP FOR YOU.</p><br>
+    </div>
+    <div>
+      <h4>THE BEST LEAVES MAKE THE BEST TEA</h4>
+         <p>We search for the most exceptional whole tea leaves the world has to offer—we visit the most fertile regions, selecting only the youngest, freshest leaves. We brew, taste, brew and taste again, taking up to 12 months to select the very best ones. All so we can offer you the best-tasting cup possible, every time.</p><br>
+    </div>
+
+    <div>
+      <%= image_tag(@post.image, class: "img-responsive") %>
+    </div>
+    <div>
+      <br>
+      <h4>PURE + TRADITIONAL TEAS</h4>
+      <p>Through centuries of passed-down knowledge and age-old techniques, one simple tea leaf is processed into a thousand possibilities. Each of our pure teas — white, green, oolong and black — has its own unique and subtle flavors that are based on where it’s grown and how it’s processed. Different methods of processing allow us to achieve our intricately layered flavors while respecting the integrity of the tea.</p>
+    </div>
+
+
+
+
+
+
+  </div> <!-- 8 Column Div Ends here -->
+
+  <div class="col-sm-4"> <!--main right section begins here -->
+    <div id="border" class="text-center">
+
+              <%= image_tag("munn.jpg", class: "img-circle", id: "img", alt: "Olivia Munn") %>
+
+      <h5> Olivia Munn</h5>
+      <h6 id="size">Contact me on <a href="#">Facebook</a> or <a href="#"> Instagram</a></h6>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text-center">
+      <div>
+      <a href="#" alt="picture of tea cup">
+        <%= image_tag("tea.jpg", id: "img-right", alt: "tea picture") %>
+      </a>
+      </div>
+      <h6 id="text-right"><a href="#"> About this Ad</a></h6>
+      <br>
+      <h4 id="text-left">White vs Green Tea!</h4>
+      <p id="text-left"> Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+  </div> <!-- 4 column Div ends here -->
+
+
+</main> <!--Main section (in cluding two columns) Ends here-->
