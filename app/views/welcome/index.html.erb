@@ -1,8 +1,11 @@
+<% content_for :title, "Home Page" %>
+
 <div class="container-fluid">
 <main class="row">
   <div class="col-sm-8"> <!-- Main left section begins here -->
     <div class="row">
     </div> <!--sub row 1 of 4 begins here -->
+
       <h2 id="bigtext"><%= @post.title %></h2>
         <h6><p>By <%= @post.author %> on <a href="#"> <%=@post.created_at.strftime("%B %e, %Y") %></a></p></h6>
     <br>

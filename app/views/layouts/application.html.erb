@@ -3,7 +3,7 @@
 <html>
 <head>
 
-  <title>SurfnPaddleRails</title>
+  <title><%= yield(:title) %></title>
   <%= csrf_meta_tags %>
 
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
@@ -85,8 +85,11 @@
           <li><a href="#">Nav item4</a></li> -->
         </ol>
       </div>
-
+      <!-- Included so I (you) can see the title is changing for every page -->
+     <h3><%= yield(:title) %></h3>
+     
     </footer> <!--Footer ends here-->
   <!-- Scripts go here. -->
+
 </body>
 </html>
