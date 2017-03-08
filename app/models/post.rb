@@ -42,7 +42,7 @@ class Post
         ),
         Post.new(
           id: 2,
-          title: "Plymouth Rock and the Pilgrims",
+          title: "Plymouth Rock and The Pilgrims",
           author: "Mark Twain",
           image: "bottompic2",
           body: %q(
